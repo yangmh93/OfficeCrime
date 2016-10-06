@@ -25,8 +25,8 @@ public class CrimeLab {
         mCrimes = new ArrayList<>();
     }
 
-    public void addCrime(Crime c) {
-        mCrimes.add(c);
+    public void addCrime(Crime crime) {
+        mCrimes.add(crime);
     }
 
     public List<Crime> getCrimes() {
@@ -40,6 +40,10 @@ public class CrimeLab {
             }
         }
         return null;
+    }
+
+    public void deleteCrime(Crime crime) {
+        mCrimes.remove(crime);
     }
 }
 
